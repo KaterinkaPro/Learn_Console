@@ -6,7 +6,7 @@ a = -9 b = -3 -> max = -3*/
 
 int a = Convert.ToInt32(Console.ReadLine());
 int b = Convert.ToInt32(Console.ReadLine());
-int max = a;
+
 {
     if (a < b)
     {
@@ -25,4 +25,11 @@ int max = a;
         Console.Write(b);
 
     }
+    else
+    
+        if (a == b)
+        {
+            Console.Write("Введенные числа равны");
+        }
+    
 }
