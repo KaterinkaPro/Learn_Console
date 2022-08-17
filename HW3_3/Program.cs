@@ -12,12 +12,14 @@ class Test
         Console.Write($"Insert random number:");
         int N = Convert.ToInt32(Console.ReadLine());
         int[] cube = new int[N + 1];
-        int b = 3; // степень, в которую возводим
+        Console.Write($"Insert second rn num");
+        int b = Convert.ToInt32(Console.ReadLine()); // степень, в которую возводим
          Console.Write($"Числа возведённые в третью степень от одного до {N} : ");
+        double sum;
         for(int i  = 1; i <= N; i++)
         {
-           cube[i] = Convert.ToInt32(Math.Pow(i, b));
-            Console.Write($"{cube[i]}, ");
+          sum = Convert.ToInt32(Math.Pow(i, b));
+            Console.Write($"{sum}, ");
         }
     }
 }
